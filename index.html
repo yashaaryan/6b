@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banana Inc.</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banana Inc.</title>
+<style>
+    body {
+        background-color: #FFD700; /* Golden yellow background */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333; /* Dark background for header */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0 20px;
+    }
+    footer {
+        background-color: #333; /* Dark background for footer */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
 </head>
 <body>
-  <header>
-    <h1><a href="#">Banana Inc.</a></h1>
+<header>
+    <h1>Banana Inc.</h1>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
     </nav>
-  </header>
-
-  <main>
-    <section id="products">
-      <h2>Our Delicious Banana Products</h2>
-      <div class="product">
-        <img src="images/banana-bunch.jpg" alt="Bunch of Bananas">
-        <h3>Fresh Bananas</h3>
-        <p>Sun-ripened and bursting with flavor, our fresh bananas are the perfect healthy snack. Choose from Cavendish or Plantain varieties.</p>
-      </div>
-      <div class="product">
-        <img src="images/banana-bread.jpg" alt="Banana Bread">
-        <h3>Homemade Banana Bread</h3>
-        <p>Baked with love and real bananas, our banana bread is moist, delicious, and perfect for breakfast or a sweet treat.</p>
-      </div>
-      <div class="product">
-        <img src="images/banana-chips.jpg" alt="Banana Chips">
-        <img src="images/banana-flakes.jpg" alt="Banana Flakes" class="half-image">
-        <h3>Banana Chips & Flakes</h3>
-        <p>A healthy and crunchy snack option! Choose from our crispy banana chips or delicious banana flakes, perfect for cereal or baking.</p>
-      </div>
+</header>
+<main>
+    <section>
+        <h2>Our Products</h2>
+        <p>Product 1: Description of product 1.</p>
+        <p>Product 2: Description of product 2.</p>
+        <p>Product 3: Description of product 3.</p>
     </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; <?php echo date("Y"); ?> Banana Inc. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+</main>
+<footer>
+    &copy; 2023 Banana Inc. All Rights Reserved.
+</footer>
 </body>
 </html>
